@@ -54,9 +54,4 @@ async def twitter(ctx):
     em = discord.Embed(title = "ExT's Twitter", description = "https://twitter.com/extsus",color = ctx.author.color)
     await ctx.send(embed = em)   
 
-@client.event
-async def message(msg):
-    if 'skid' in msg.content:
-        await client.send_message("https://tenor.com/view/spies-in-disguise-ratio-didnt-ask-dont-care-twitter-gif-22116633")
-
 client.run('token goes here')
